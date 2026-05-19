@@ -9,7 +9,7 @@ async def lifespan(app: FastAPI):
     try:
         Base.metadata.create_all(engine)
     except Exception as e:
-        print(f"Error al crear tablas: {e}")
+        print(f"error creating tables: {e}")
         raise
     yield
 
