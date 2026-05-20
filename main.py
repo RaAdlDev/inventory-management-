@@ -17,7 +17,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     lifespan=lifespan,
     title="Inventory API",
-    description="API for inventory gestion",
+    description="API for inventory management",
     version="1.0.0")
 app.include_router(products.router)
 app.include_router(users.router)

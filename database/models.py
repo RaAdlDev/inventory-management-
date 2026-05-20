@@ -50,7 +50,7 @@ class Transactions(Base):
     __tablename__ = "transactions"
     transactions_id: Mapped[str] = mapped_column(primary_key= True, default=lambda: str(uuid.uuid4()))
     product_id: Mapped[str] = mapped_column(ForeignKey("stock.product_id", ondelete="CASCADE"))
-    movement_date: Mapped[datetime] = mapped_column(default= datetime.now(timezone.utc))
+    movement_date: Mapped[datetime] = mapped_column(default= lambda: datetime.now(timezone.utc))
     movement: Mapped[Literal["add", "subtract"]] =  mapped_column(
         Enum("add", "subtract", name="movement_types"))
     quantity: Mapped[int]
