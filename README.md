@@ -47,7 +47,7 @@ INVENTORY/
 
 ```bash
 git clone https://github.com/RaAdlDev/inventory-management-.git
-cd inventory-api
+cd inventory-management-
 ```
 
 ### 2. Create a virtual environment
