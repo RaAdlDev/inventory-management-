@@ -73,7 +73,6 @@ SECRET_KEY=your_super_secret_key_here
 DATABASE_URL=sqlite:///./inventory.db
 TOKEN_DURATION=30
 ALGORITHM=HS256
-DEBUG=False
 WEBHOOK_URL=http://localhost:8000/webhook/
 ```
 
@@ -83,7 +82,6 @@ WEBHOOK_URL=http://localhost:8000/webhook/
 | `DATABASE_URL` | SQLAlchemy DB URL | `sqlite:///./inventory.db` |
 | `TOKEN_DURATION` | Token expiry in minutes | `30` |
 | `ALGORITHM` | JWT algorithm | `HS256` |
-| `DEBUG` | Debug mode | `False` |
 | `WEBHOOK_URL` | Webhook endpoint URL | `http://localhost:8000/webhook/` |
 
 ### 5. Run the server
